@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(178, 199, 251);
+}
+.main{
+   background-color: rgb(246, 246, 246);
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius: 15px;
+    box-shadow: 3px 5px 30px rgb(170, 169, 169);
+    background-color:rgb(233, 232, 232);
+    width: 92%;
+    height: 92%;
+}
+h1{
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 26px;
+    font-weight: 400;
+}
+input{
+    padding: 7px 5px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 16px;
+
+}
+.content{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    
+}
+
+p{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.btns{
+    margin-top: 50px;
+    margin-left: 15px;
+    display: flex;
+    gap: 5px;
+
+}
+.Anagram{
+    padding: 13px 87px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(37, 172, 226);
+    color: white;
+    font-size: 18px;
+}
+.Clear{
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: rgb(37, 172, 226);
+    border-radius: 6px;
+    padding: 13px 40px;
+}
+
+.result{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.result span{
+    margin-left: 20px;
+}
+
+@media(max-width:480px){
+    .main{
+        height: 550px;
+    }
+   .content{
+    flex-wrap: wrap;
+
+   }
+   input{
+    width: 90vw;
+   }
+   .btns{
+    margin-left: 0px;
+    flex-direction: column;
+}
+}
